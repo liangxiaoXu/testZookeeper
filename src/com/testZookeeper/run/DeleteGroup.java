@@ -19,7 +19,8 @@ public class DeleteGroup extends ZkConnectionWatcher{
 	public static void main(String[] args) throws IOException, InterruptedException, KeeperException {
 		DeleteGroup dGroup = new DeleteGroup();
 		dGroup.connect(Constants.zkAddress);
-		dGroup.deleteGroup("zoo/dog");
+//		dGroup.deleteGroup("zoo/dog");
+		dGroup.deleteGroup("zoo/cat");
 		dGroup.deleteGroup("zoo");
 		dGroup.close();
 	}
